@@ -33,14 +33,14 @@ var buildingPoints int = 40
 func rollAbilityScores() AbilityScores {
 
 	// Roll and prepare Strength
-    str := new(attributes.Strength)
-    str.Attribute.Value = dice.RollDice(3, 6)
-    str.Attribute.Fractional = dice.RollDice(1, 99)
-    str.DmgMod = attributes.GetStrDamageMod(str.Attribute.Value, str.Attribute.Fractional)
-    str.FeatofStr = attributes.GetFeatOfStrength(str.Attribute.Value, str.Attribute.Fractional)
-    str.Lift = attributes.GetStrLift(str.Attribute.Value, str.Attribute.Fractional)
-    str.CarryNoEnc = attributes.GetCarryNoEnc(str.Attribute.Value, str.Attribute.Fractional)
-    str.CarryLtEnc = attributes.GetCarryLtEnc(str.Attribute.Value, str.Attribute.Fractional)
+	str := new(attributes.Strength)
+	str.Attribute.Value = dice.RollDice(3, 6)
+	str.Attribute.Fractional = dice.RollDice(1, 99)
+	str.DmgMod = attributes.GetStrDamageMod(str.Attribute.Value, str.Attribute.Fractional)
+	str.FeatofStr = attributes.GetFeatOfStrength(str.Attribute.Value, str.Attribute.Fractional)
+	str.Lift = attributes.GetStrLift(str.Attribute.Value, str.Attribute.Fractional)
+	str.CarryNoEnc = attributes.GetCarryNoEnc(str.Attribute.Value, str.Attribute.Fractional)
+	str.CarryLtEnc = attributes.GetCarryLtEnc(str.Attribute.Value, str.Attribute.Fractional)
 	str.CarryMdEnc = attributes.GetCarryMdEnc(str.Attribute.Value, str.Attribute.Fractional)
 	str.Drag = attributes.GetStrDrag(str.Attribute.Value, str.Attribute.Fractional)
 
